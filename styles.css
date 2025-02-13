@@ -13,12 +13,13 @@
     --white:#ffffff;
 }
 
-/* GLOBAL STYLES (mobile first/small) */
+
 /* CSS REST */
 h1, h2{
     font-family: "Kavoon";
 }
 
+/* GLOBAL STYLES (mobile first/small) */
 h1{
     font-size: 3em;
 }
