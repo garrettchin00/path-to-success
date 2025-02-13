@@ -19,6 +19,10 @@ h1, h2{
     font-family: "Kavoon";
 }
 
+text{
+    font-family: "Inter";
+}
+
 /* GLOBAL STYLES (mobile first/small) */
 h1{
     font-size: 3em;
