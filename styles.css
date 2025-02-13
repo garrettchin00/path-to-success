@@ -1,7 +1,8 @@
+/* CSS BY Garrett Chin */
+/* ROOT VARIABLES */
 :root{
-    /* Fonts */
-    /* Add to your CSS Under Imported Fonts */
-    --fonts: "Inter", "Kavoon", url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+    /* Imported Fonts */
+    --fonts: "Inter", "Kavoon", sans-serif, url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
     /* Colors */
     --teal: #4CA7C0;
     --purple: #484FB7;
@@ -12,19 +13,28 @@
     --white:#ffffff;
 }
 
-H1, H2
-Kavoon
-All other text
-Inter
-H1
-3em
-NAV H2
-1.5em
-H2
-2em
-H3
-1.5em
-H4
-1.15em
- 
+/* GLOBAL STYLES (mobile first/small) */
+/* CSS REST */
+h1, h2{
+    font-family: "Kavoon";
+}
 
+h1{
+    font-size: 3em;
+}
+
+nav h2{
+    font-size: 1.5em;
+}
+
+h2{
+    font-size: 2em;
+}
+
+h3{
+    font-size: 1.5em;
+}
+
+h4{
+    font-size: 1.15em;
+}
