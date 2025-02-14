@@ -43,3 +43,36 @@ h3{
 h4{
     font-size: 1.15em;
 }
+
+/* ----- TABLE STYLES ----- */
+table{
+    width: 245px;
+    margin: 0 auto;
+}
+
+caption{
+    font-weight: bold;
+    font-size: 1.35rem;
+    margin: 0.75rem auto;
+}
+
+thead{
+    background-color: var(--teal);
+    border-radius: 0.25rem;
+}
+
+thead tr{
+    border-bottom: 2px solid var(--dark-gray);
+}
+
+th{
+    font-weight: bold;
+}
+
+tr{
+    border-bottom: 2px solid var(--dark-gray);
+}
+
+td, th{
+    padding: 0.5rem;
+}
