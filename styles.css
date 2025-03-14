@@ -36,6 +36,13 @@ nav h2{
     font-size: 1.5em;
 }
 
+nav a{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 nav ul{
     list-style: none;
 }
