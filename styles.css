@@ -4,7 +4,7 @@
 /* ROOT VARIABLES */
 :root{
     /* Imported Fonts */
-    --fonts: "Inter", "Kavoon", sans-serif;
+    --fonts: "Inter", "Kavoon", sans-serif, url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
     /* Colors */
     --teal: #4CA7C0;
     --purple: #484FB7;
