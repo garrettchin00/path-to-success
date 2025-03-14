@@ -35,6 +35,10 @@ h1{
     font-size: 3em;
 }
 
+nav{
+    background-color: var(--yellow);
+}
+
 nav h2{
     visibility: hidden;
     height: 1px;
