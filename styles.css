@@ -105,6 +105,7 @@ td, th{
 
 td{
     display: table-cell;
+    unicode-bidi: isolate;
 }
 
 #takethefirststep a{
