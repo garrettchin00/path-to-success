@@ -103,6 +103,10 @@ td, th{
     padding: 0.5rem;
 }
 
+td{
+    display: table-cell;
+}
+
 #takethefirststep a{
     display: block;
     text-align: center;
