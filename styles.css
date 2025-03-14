@@ -104,6 +104,7 @@ td, th{
 }
 
 #takethefirststep a{
+    display: block;
     color: var(--purple);
     background-color: var(--teal);
 }
