@@ -103,9 +103,7 @@ td, th{
     padding: 0.5rem;
 }
 
-#takethefirststep{
-    border: 1px solid var(--white);
-    padding: 5px;
+#takethefirststep a{
     color: var(--purple);
     background-color: var(--teal);
 }
