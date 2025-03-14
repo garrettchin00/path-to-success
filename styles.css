@@ -105,6 +105,9 @@ td, th{
 
 #takethefirststep a{
     display: block;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
     color: var(--purple);
     background-color: var(--teal);
 }
