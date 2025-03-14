@@ -42,7 +42,7 @@ nav h2{
 
 nav a{
     display: block;
-    text-align: center;
+    text-align: left;
     font-weight: bold;
     text-decoration: none;
     color: var(--teal);
