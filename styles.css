@@ -103,9 +103,11 @@ td, th{
     padding: 0.5rem;
 }
 
-footer{
+#takethefirststep{
+    border: 1px solid var(--white);
+    padding: 5px;
     color: var(--purple);
-    background-color: var(--teal); 
+    background-color: var(--teal);
 }
 
 footer a{
