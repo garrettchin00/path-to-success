@@ -35,10 +35,6 @@ h1{
     font-size: 3em;
 }
 
-nav{
-    background-color: var(--yellow);
-}
-
 nav h2{
     visibility: hidden;
     height: 1px;
@@ -49,7 +45,7 @@ nav a{
     display: block;
     font-weight: bold;
     text-decoration: none;
-    color: var(--purple);
+    color: var(--yellow);
     background-color: var(--teal);
 }
 
