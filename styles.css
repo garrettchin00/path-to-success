@@ -41,6 +41,8 @@ nav a{
     text-align: center;
     font-weight: bold;
     text-decoration: none;
+    color: var(--lavender);
+    background-color: var(--teal);
 }
 
 nav ul{
