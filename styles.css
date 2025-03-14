@@ -16,7 +16,11 @@
     --white:#ffffff;
 }
 
-
+body{
+    margin: 0 auto;
+    background-color: var(--vanilla);
+    width: 320px;
+}
 /* CSS REST */
 h1, h2{
     font-family: "Kavoon";
@@ -42,7 +46,6 @@ nav a{
     font-weight: bold;
     text-decoration: none;
     color: var(--teal);
-    background-color: var(--lavender);
 }
 
 nav ul{
