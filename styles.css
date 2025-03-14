@@ -42,7 +42,6 @@ nav h2{
 
 nav a{
     display: block;
-    text-align: left;
     font-weight: bold;
     text-decoration: none;
     color: var(--teal);
