@@ -103,6 +103,11 @@ td, th{
     padding: 0.5rem;
 }
 
+footer{
+    color: var(--purple);
+    background-color: var(--teal); 
+}
+
 footer a{
     display: block;
     text-align: center;
