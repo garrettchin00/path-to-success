@@ -16,10 +16,12 @@
     --white:#ffffff;
 }
 
+
+
 body{
     margin: 0 auto;
     background-color: var(--white);
-    width: 320px;
+    width: 450px;
 }
 /* CSS REST */
 h1, h2{
