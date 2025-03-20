@@ -35,6 +35,10 @@ text{
     font-family: "Inter";
 }
 
+p{
+    font-family: "Inter";
+}
+
 /* GLOBAL STYLES (mobile first/small) */
 h1{
     font-size: 3em;
