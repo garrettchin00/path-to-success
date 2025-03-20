@@ -16,6 +16,14 @@
     --white:#ffffff;
 }
 
+header{
+    background-color: var(--lavender);
+}
+
+header p{
+    background-color: var(--pink);
+}
+
 body{
     margin: 0 auto;
     background-color: var(--lavender);
