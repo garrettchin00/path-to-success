@@ -20,8 +20,10 @@ header{
     background-color: var(--lavender);
 }
 
+
 header p{
     background-color: var(--pink);
+    color: var(--white);
 }
 
 body{
@@ -50,12 +52,25 @@ p{
 /* GLOBAL STYLES (mobile first/small) */
 h1{
     font-size: 3em;
+    color: var(--white);
+}
+
+nav{
+    background-color: var(--yellow);
 }
 
 nav h2{
-    visibility: hidden;
     height: 1px;
     font-size: 1.5em;
+    color: var(--dark-gray);
+    text-align: right;
+}
+
+nav h2 a{
+    display: inline-block;
+    margin: 30px;
+    border-radius: 30px;
+    float: right;
 }
 
 nav a{
@@ -64,6 +79,7 @@ nav a{
     text-decoration: none;
     color: var(--dark-gray);
     background-color: var(--teal);
+    visibility: hidden;
 }
 
 nav ul{
@@ -125,13 +141,18 @@ td{
     unicode-bidi: isolate;
 }
 
+#takethefirststep{
+    color: var(--white);
+    background-color: var(--pink);
+}
+
 #takethefirststep a{
     display: block;
     text-align: center;
     font-weight: bold;
     text-decoration: none;
     color: var(--dark-gray);
-    background-color: var(--pink);
+    background-color: var(--white);
 }
 
 footer a{
