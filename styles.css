@@ -100,7 +100,7 @@ caption{
 }
 
 thead{
-    background-color: var(--teal);
+    background-color: var(--yellow);
     border-radius: 0.25rem;
 }
 
@@ -131,7 +131,7 @@ td{
     font-weight: bold;
     text-decoration: none;
     color: var(--dark-gray);
-    background-color: var(--teal);
+    background-color: var(--pink);
 }
 
 footer a{
