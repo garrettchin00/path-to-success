@@ -169,8 +169,12 @@ footer a{
     text-align: center;
     font-weight: bold;
     text-decoration: none;
-    color: var(--dark-gray);
+    color: var(--white);
     background-color: var(--teal);
+}
+
+footer{
+    color: var(--white);
 }
 
 input{
