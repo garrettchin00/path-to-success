@@ -19,6 +19,7 @@
 header{
     background-color: var(--lavender);
     width: 450px;
+    min-height: 225px;
     border-radius: 20px;
     margin-top: 2.5em;
     margin-bottom: 2.5em;      
@@ -31,6 +32,14 @@ header p{
     background-color: var(--pink);
     color: var(--white);
     text-align: center;
+    width: 450px;
+    height: 112px;
+    border-radius: 20px;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;      
+    margin-right: 2.5em;
+    margin-bottom: 2.5em;
+    margin: 0 auto;
 }
 
 body{
@@ -65,13 +74,14 @@ nav{
     background-color: var(--yellow);
     border-radius: 30px;
     width: 6.5rem;
-    height: 6.5rem;
-    float: right;
+    height: 4.5rem;
+    float: 1px right;
     text-align: center;
     margin-top: 0.5em;
     margin-bottom: 0.5em;      
     margin-right: 0.5em;
     margin-bottom: 0.5em;
+    box-sizing: border-box;
     padding: 1px;
 }
 
