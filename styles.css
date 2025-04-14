@@ -43,6 +43,7 @@ text{
 
 p{
     font-family: "Inter";
+    color: var(--dark-gray);
 }
 
 /* GLOBAL STYLES (mobile first/small) */
@@ -60,6 +61,8 @@ nav h2{
     font-size: 1.5em;
     color: var(--dark-gray);
     text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
 }
 
 nav h2 a{
@@ -92,6 +95,7 @@ nav ul{
 nav li{
     line-height: 2rem;
     margin: 10px 0px 10px -40px;
+    visibility: hidden;
 }
 
 h2{
@@ -139,6 +143,7 @@ thead tr{
 
 th{
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 tr{
@@ -155,8 +160,11 @@ td{
 }
 
 #takethefirststep{
-    color: var(--white);
     background-color: var(--pink);
+}
+
+#takethefirststep p{
+    color: var(--white);
 }
 
 #takethefirststep a{
