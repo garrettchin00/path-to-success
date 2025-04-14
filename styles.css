@@ -32,10 +32,6 @@ body{
     width: 450px;
 }
 
-section{
-    background-color: var(--white);
-}
-
 /* CSS REST */
 h1, h2{
     font-family: "Kavoon";
@@ -81,6 +77,14 @@ nav a{
     background-color: var(--yellow);
 }
 
+a{
+    font-family: "Inter";
+}
+
+li{
+    font-family: "Inter";
+}
+
 nav ul{
     list-style: none;
 }
@@ -92,29 +96,36 @@ nav li{
 
 h2{
     font-size: 2em;
-    color: var(--yellow);
+    color: var(--white);
 }
 
 h3{
     font-size: 1.5em;
     font-family: "Inter";
+    color: var(--yellow);
 }
 
 h4{
     font-size: 1.15em;
     font-family: "Inter";
+    color: var(--purple);
 }
 
 /* ----- TABLE STYLES ----- */
 table{
     width: 245px;
     margin: 0 auto;
+    background-color: var(--white);
 }
 
 caption{
     font-weight: bold;
     font-size: 1.35rem;
     margin: 0.75rem auto;
+}
+
+table{
+    font-family: "Inter";
 }
 
 thead{
@@ -157,19 +168,33 @@ td{
     background-color: var(--white);
 }
 
-#takethefirststep h2{
-    color: var(--white);
-}
-
 #ourservices{
     background-color: var(--purple);
 }
 
+#ourservices h3{
+    background-color: var(--purple);
+}
+
+#one-on-one section{
+    background-color: var(--white);
+}
+
+#groupcoaching section{
+    background-color: var(--white);
+}
+
+#workshops section{
+    background-color: var(--white);
+}
+
+#online section{
+    background-color: var(--white);
+}
 
 #whychooseus{
     background-color: var(--pink);
 }
-
 
 #whychooseus ul{
     list-style: none;
@@ -181,6 +206,10 @@ td{
 
 #prices h3{
     color: var(--yellow);
+    background-color: var(--purple);
+}
+
+#prices section{
     background-color: var(--purple);
 }
 
