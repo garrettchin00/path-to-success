@@ -78,8 +78,7 @@ nav a{
     font-weight: bold;
     text-decoration: none;
     color: var(--dark-gray);
-    background-color: var(--teal);
-    visibility: hidden;
+    background-color: var(--yellow);
 }
 
 nav ul{
@@ -98,10 +97,12 @@ h2{
 
 h3{
     font-size: 1.5em;
+    font-family: "Inter";
 }
 
 h4{
     font-size: 1.15em;
+    font-family: "Inter";
 }
 
 /* ----- TABLE STYLES ----- */
@@ -161,7 +162,26 @@ td{
 }
 
 #ourservices{
-    background-color: var(--white);
+    background-color: var(--purple);
+}
+
+
+#whychooseus{
+    background-color: var(--pink);
+}
+
+
+#whychooseus ul{
+    list-style: none;
+}
+
+#prices{
+    background-color: var(--purple);
+}
+
+#prices h3{
+    color: var(--yellow);
+    background-color: var(--purple);
 }
 
 footer a{
