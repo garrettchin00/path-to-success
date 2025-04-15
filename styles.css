@@ -55,6 +55,13 @@ h2 {
 h3 {
     font-size: var(--h3-size);
     font-family: var(--font-main);
+    color: var(--yellow);
+}
+
+h4 {
+    font-size: var(--h4-size);
+    font-family: var(--font-main);
+    color: var(--purple);
 }
 
 .site-header {
@@ -250,8 +257,7 @@ h3 {
     color: var(--white);
 }
 
-.cta h2,
-.cta p {
+.cta h2, .cta p {
     margin: 0;
     grid-column: 1;
 }
@@ -278,8 +284,7 @@ h3 {
     color: var(--white);
 }
 
-.site-footer p,
-.site-footer a {
+.site-footer p, .site-footer a {
     margin: 0;
     font-size: var(--h4-size);
     color: var(--white);
