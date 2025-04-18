@@ -168,7 +168,7 @@ main > section > h2 {
     padding-left: 10px;
 }
 
-/* why-choose-us section */
+/* why-choose-us */
 #why-choose-us {
     background-color: var(--pink);
 }
@@ -205,7 +205,7 @@ main > section > h2 {
     background-color: var(--white);
 }
 
-/* pricing section */
+/* pricing */
 #pricing {
     padding-bottom: 5px;
 }
@@ -236,7 +236,7 @@ main > section > h2 {
     border: 1px solid var(--yellow);
 }
 
-/* first-step section */
+/* first-step */
 #first-step {
     background-color: var(--pink);
     color: var(--white);
