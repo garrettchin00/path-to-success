@@ -1,364 +1,284 @@
-/* -------------------- CSS BY Garrett Chin -------------------------------------- */
-/* -------------------- IMPORTED FONTS -------------------------------------- */
+/* CSS BY Garrett Chin */
+
+/* IMPORT FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
 
-/*-------------------- CSS RESET ---------------------------------------------------*/
-* {
+/* CSS RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote::before, blockquote::after,
+q::before, q::after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
-/* -------------------- ROOT VARIABLES --------------------------------------- */
+/* ROOT VARIABLES */
 :root {
+    --font-heading: 'Kavoon', serif;
+    --font-body: 'Inter', sans-serif;
+
+    --h1-size: 3em;
+    --nav-h2-size: 1.5em;
+    --h2-size: 2em;
+    --h3-size: 1.5em;
+    --h4-size: 1.15em;
+
     --teal: #4CA7C0;
     --purple: #484FB7;
     --lavender: #6B8FE7;
     --yellow: #E9BB57;
     --pink: #D9526F;
     --dark-gray: #1E1E1E;
-    --white: #ffffff;
-
-    --font-main: 'Inter', sans-serif;
-    --font-heading: 'Kavoon', cursive;
-
-    --h1-size: 3em;
-    --h2-size: 2em;
-    --h3-size: 1.5em;
-    --h4-size: 1.15em;
+    --white: #FFFFFF;
 }
 
-/* --------------------GLOBAL STYLES (mobile first/small) -------------------- */
+/* GLOBAL STYLES (mobile first/small) */
 body {
-    font-family: var(--font-main);
-    background-color: var(--purple);
+    font-family: var(--font-body);
+    background-color: var(--lavender);
     color: var(--dark-gray);
+    text-align: center;
     line-height: 1.5;
-    max-width: 1430px;
-    margin: 0 auto;
-    padding: 0 20px;
 }
 
-h1 {
-    font-size: var(--h1-size);
-    font-family: var(--font-heading);
+main {
+    background-color: var(--purple);
+    margin: 0 auto;
+    max-width: 450px;
+    align-items: center;
+}
+
+/* header */
+header {
+    background-color: var(--purple);
     color: var(--white);
+    padding: 12px 0;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+header p {
+    font-style: italic;
+    padding: 10px 0 50px 0;
+}
+
+header h1, header h2 {
+    font-family: var(--font-heading);
+    font-size: var(--h1-size);
+}
+
+/* nav menu */
+nav {
+    background-color: var(--yellow);
+    padding: 15px;
+}
+
+nav li {
+    margin: 10px 0;
+    background-color: var(--teal);
+}
+
+nav li > a {
+    font-weight: bold;
+    border-radius: 8px;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--dark-gray);
+    text-transform: uppercase;
+}
+
+nav h2 {
+    font-size: var(--nav-h2-size);
+    font-style: italic;
+    font-family: var(--font-body);
+    font-weight: bold;
+    color: var(--dark-gray);
+    text-transform: uppercase;
     text-align: center;
 }
 
+/* headings */
 h2 {
     font-size: var(--h2-size);
     font-family: var(--font-heading);
     color: var(--white);
+    text-align: left;
 }
 
 h3 {
     font-size: var(--h3-size);
-    font-family: var(--font-main);
+    font-weight: bold;
     color: var(--yellow);
+    text-align: left;
+    padding-left: 10px;
 }
 
 h4 {
     font-size: var(--h4-size);
-    font-family: var(--font-main);
     color: var(--purple);
-}
-
-.site-header {
-    width: 100%;
-    max-width: 1430px;
-    height: auto;
-    background-color: var(--lavender);
-    border-radius: 0 0 20px 20px;
-    margin: 0 auto;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 15px;
-}
-
-.site-header h1 {
-    margin-top: 45px;
-}
-
-.hero {
-    background-color: var(--pink);
-    width: 100%;
-    max-width: 1430px;
-    height: 40px;
-    border-radius: 0 0 20px 20px;
-    text-align: center;
-    font-size: var(--h4-size);
-    padding: 0;
-    line-height: 40px;
-}
-
-.hero h2 {
-    font-family: var(--font-main);
-    font-size: var(--h3-size);
-    color: var(--white);
-}
-
-.nav-menu {
-    list-style: none;
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: var(--yellow);
-    color: var(--dark-gray);
-    text-transform: uppercase;
-    padding: 10px 15px;
-    border-radius: 0 0 20px 20px;
     font-weight: bold;
 }
 
-.nav-menu li {
-    display: inline;
-    margin: 0 10px;
-}
-
-.nav-menu a {
-    text-decoration: none;
-    color: var(--dark-gray);
-}
-
-.nav-toggle {
-    display: block;
-    background-color: var(--yellow);
-    color: var(--dark-gray);
+/* shared section styling */
+main > section > section {
     padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-transform: uppercase;
-    position: fixed;
-    top: 10px;
-    right: 10px;
-}
-
-.nav-toggle.active + .nav-menu {
-    display: block;
-}
-
-.services {
-    padding: 20px;
-    display: grid;
-    flex-direction: column;
-    grid-template-columns: 1fr;
-    gap: 20px;
-}
-
-.service-category {
-    padding: 15px;
-}
-
-.service-item {
-    margin: 10px 0;
-    border-radius: 10px;
+    margin: 15px;
     background-color: var(--white);
-    padding: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.why-choose-us {
-    background-color: var(--pink);
-    padding: 20px;
-}
-
-.why-choose-us ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-}
-
-.why-choose-us li {
-    background-color: var(--color-white);
     border-radius: 10px;
-    padding: 40px;
-    text-align: center;
-    font-size: var(--h3-size);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
 }
 
-.why-choose-us li:nth-child(1) {
+main > section > h2 {
+    padding-left: 10px;
+}
+
+/* why-choose-us section */
+section[id*="why-choose-us"] {
+    background-color: var(--pink);
+}
+
+section[id*="why-choose-us"] h2 {
+    padding: 10px 0 0 10px;
+}
+
+section[id*="why-choose-us"] ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 0 10px 10px 10px;
+    margin: 20px 10px;
+}
+
+section[id*="why-choose-us"] li {
+    padding: 30px 0;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: var(--h4-size);
+}
+
+section[id*="why-choose-us"] li:nth-of-type(1) {
     background-color: var(--teal);
 }
-
-.why-choose-us li:nth-child(2) {
-    background-color: var(--purple);
+section[id*="why-choose-us"] li:nth-of-type(2) {
+    background-color: var(--lavender);
 }
-
-.why-choose-us li:nth-child(3) {
+section[id*="why-choose-us"] li:nth-of-type(3) {
     background-color: var(--yellow);
 }
-
-.why-choose-us li:nth-child(4) {
+section[id*="why-choose-us"] li:nth-of-type(4) {
     background-color: var(--white);
 }
 
-.pricing {
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
+/* pricing section */
+section[id*="pricing"] {
+    padding-bottom: 5px;
 }
 
-.pricing-block {
-    display: flex;
-    flex-direction: column;
+section[id*="pricing"] h2 {
+    padding-left: 10px;
 }
 
-.pricing h3 {
-    color: var(--yellow);
-    margin-bottom: 10px;
-    grid-column: span 1;
-}
-
-.pricing table {
-    width: 100%;
-    border-collapse: collapse;
-    border: 2px solid var(--yellow);
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.pricing th,
-.pricing td {
-    line-height: 3em;
+section[id*="pricing"] h3 {
     padding: 10px;
-    text-align: left;
+}
+
+section[id*="pricing"] table {
+    margin: 0 auto;
     border: 1px solid var(--yellow);
 }
 
-.pricing th {
+section[id*="pricing"] table th {
     background-color: var(--yellow);
-    color: var(--dark-gray);
-    font-weight: bold;
     text-transform: uppercase;
-    text-align: center;
+    font-weight: bold;
+    padding: 10px;
 }
 
-.pricing td {
+section[id*="pricing"] table td {
     background-color: var(--white);
+    padding: 10px;
+    border: 1px solid var(--yellow);
 }
 
-.firststep {
-    display: grid;
-    grid-template-columns: 1fr 200px;
-    align-items: center;
+/* first-step section */
+section[id*="first-step"] {
     background-color: var(--pink);
-    padding: 20px;
-    gap: 20px;
     color: var(--white);
+    text-align: left;
+    padding: 15px;
 }
 
-.firststep h2, .firststep p {
-    margin: 0;
-    grid-column: 1;
+section[id*="first-step"] h2 {
+    text-align: left;
+    padding-bottom: 5px;
 }
 
-.firststep a.firststep-btn {
+section[id*="first-step"] a {
     display: block;
-    text-align: center;
-    padding: 15px 20px;
+    margin: 10px auto 0 auto;
     background-color: var(--white);
     color: var(--dark-gray);
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     text-decoration: none;
-    font-weight: bold;
     text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px var(--dark-gray); 
+    line-height: 1.5;
+    width: 300px;
 }
 
-.site-footer {
+/* footer */
+footer {
+    max-width: 450px;
+    background-color: var(--purple);
+    color: var(--white);
+    margin: 0 auto;
+    padding: 15px 0;
     display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: var(--lavender);
-    border-radius: 0 0 20px 20px;
+    justify-content: space-around;
+    font-family: var(--font-body);
+}
+
+footer a, footer p {
     color: var(--white);
-}
-
-.site-footer p, .site-footer a {
-    margin: 0;
-    font-size: var(--h4-size);
-    color: var(--white);
-    padding:  0px 150px;
-}
-
-
-
-/*-------------------- MEDIA QUERY (medium) --------------------------------*/
-@media (min-width: 620px) {
-    .nav-menu {
-        display: none;
-    }
-
-    .nav-toggle {
-        display: block;
-    }
-
-    .why-choose-us ul {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .pricing {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/*-------------------- MEDIA QUERY (large) ------------------------------------*/
-@media (min-width: 950px) {
-    .site-header {
-        width: 100%;
-        max-width: 1430px;
-    }
-
-    .nav-toggle {
-        display: none;
-    }
-
-    .nav-menu {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 770px;
-        height: 50px;
-    }
-
-    .services {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
-    }
-
-    .service-category {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .service-item {
-        width: 100%;
-    }
-
-    .why-choose-us ul {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .pricing {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-/*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
-@media (min-width: 1280px) {
-    .site-header {
-        padding: 20px 50px;
-    }
+    text-decoration: none;
+    padding: 20px 0;
 }
