@@ -237,19 +237,19 @@ main > section > h2 {
 }
 
 /* first-step section */
-#firststep {
+#first-step {
     background-color: var(--pink);
     color: var(--white);
     text-align: left;
     padding: 15px;
 }
 
-#firststep h2 {
+#first-step h2 {
     text-align: left;
     padding-bottom: 5px;
 }
 
-#firststep a {
+#first-step a {
     display: block;
     margin: 10px auto 0 auto;
     background-color: var(--white);
