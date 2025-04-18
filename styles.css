@@ -247,7 +247,7 @@ h4 {
     background-color: var(--white);
 }
 
-.cta {
+.firststep {
     display: grid;
     grid-template-columns: 1fr 200px;
     align-items: center;
@@ -257,12 +257,12 @@ h4 {
     color: var(--white);
 }
 
-.cta h2, .cta p {
+.firststep h2, .firststep p {
     margin: 0;
     grid-column: 1;
 }
 
-.cta a.cta-btn {
+.firststep a.firststep-btn {
     display: block;
     text-align: center;
     padding: 15px 20px;
