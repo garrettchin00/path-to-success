@@ -87,7 +87,6 @@ main {
 header {
     background-color: var(--purple);
     color: var(--white);
-    padding: 12px;
     max-width: 450px;
     margin: 0 auto;
 }
@@ -95,6 +94,7 @@ header {
 header div{
     border-radius: 0 0 20px 20px;
     background-color: var(--lavender);
+    padding: 12px;
 }
 
 header p {
@@ -102,7 +102,7 @@ header p {
     padding: 10px 0 50px 0;
     background-color: var(--pink);
     height: 40px;
-    border-radius: 0 0 50px 50px;
+    border-radius: 0 0 45px 45px;
 }
 
 header h1, header h2 {
