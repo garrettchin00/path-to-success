@@ -70,7 +70,7 @@ table {
 /* GLOBAL STYLES (mobile first/small) */
 body {
     font-family: var(--font-body);
-    background-color: var(--lavender);
+    background-color: var(--teal);
     color: var(--dark-gray);
     text-align: center;
     line-height: 1.5;
@@ -87,14 +87,22 @@ main {
 header {
     background-color: var(--purple);
     color: var(--white);
-    padding: 12px 0;
+    padding: 12px;
     max-width: 450px;
     margin: 0 auto;
+}
+
+header div{
+    border-radius: 0 0 20px 20px;
+    background-color: var(--lavender);
 }
 
 header p {
     font-style: italic;
     padding: 10px 0 50px 0;
+    background-color: var(--pink);
+    height: 40px;
+    border-radius: 0 0 50px 50px;
 }
 
 header h1, header h2 {
